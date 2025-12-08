@@ -1,0 +1,10 @@
+Une organisation claire pour faciliter la maintenance :
+
+nexus-dev-blog/
+│
+├── index.html      # Structure sémantique principale
+├── style.css       # Styles globaux, variables et responsive
+├── script.js       # Logique UI (Menu mobile, Scroll)
+├── assets/         # Images et ressources
+│   └── img/
+└── README.md       # Documentation du projet
