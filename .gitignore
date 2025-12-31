@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# VSCode
+.vscode/
+
+# Local env
+.env
+.env.local
+
+# build
+dist/
+build/
+
+# system files
+Thumbs.dbv
