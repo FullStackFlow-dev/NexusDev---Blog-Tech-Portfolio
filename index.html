@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NexusDev — Blog & Portfolio</title>
+  <meta name="description" content="Blog tech et portfolio — HTML/CSS/Vanilla JS responsive et accessible." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand">NexusDev</a>
+
+      <button class="toggle-theme" id="theme-toggle" aria-label="Basculer thème">🌓</button>
+
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+        ☰
+      </button>
+
+      <nav id="main-nav" class="nav" role="navigation" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <h1>NexusDev</h1>
+      <p>Blog & portfolio — apprentissage Full Stack, performant et accessible.</p>
+    </section>
+
+    <section id="articles" class="section">
+      <div class="section-header">
+        <h2>Articles</h2>
+        <div class="filters">
+          <select id="category-filter" aria-label="Filtrer par catégorie">
+            <option value="all">Toutes catégories</option>
+          </select>
+          <input id="search" type="search" placeholder="Rechercher..." aria-label="Rechercher article" />
+        </div>
+      </div>
+
+      <div id="articles-list" class="grid"></div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projets</h2>
+      <p>Exemples de projets et démonstrations techniques.</p>
+      <div class="projects-grid">
+        <article class="card">
+          <h3>Projet démonstration</h3>
+          <p>Mini-app en Vanilla JS.</p>
+        </article>
+      </div>
+    </section>
+
+    <aside id="about" class="aside">
+      <h2>À propos</h2>
+      <p>Développeur Full Stack — Passion pour les interfaces performantes.</p>
+    </aside>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Liens : <a href="#">LinkedIn</a> • <a href="#">GitHub</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> NexusDev — MIT License</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
